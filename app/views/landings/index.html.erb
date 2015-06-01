@@ -1,0 +1,10 @@
+<div class="form-container">
+	<h1>Salmon Cove</h1>
+	<p>We're relaunching soon with something amazing. Enter your name and email below and we'll let you know when it's ready.</p>
+	<%= form_for Lead.new do |f| %>
+		<%= f.text_field :name, placeholder: "Your name" %>
+		<%= f.text_field :email, placeholder: "Your email address" %>
+		<%= f.submit "Sign Up" %>
+	<% end %>
+</div>
+<div id="background"></div>

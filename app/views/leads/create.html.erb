@@ -1,0 +1,10 @@
+<div class="form-container">
+	<h1>Salmon Cove</h1>
+	<% if @errors %>
+		<p>Oops! We weren't able to add you to the list because of the following <%= pluralize_without_count(@errors.count, "reason") %>: <%= @errors.join(", ") %>.</p>
+		<%= link_to "&larr; Go back to home page".html_safe, root_path %>
+	<% else %>
+		<p>Thanks! We will let you know when our new product is ready.</p>
+	<% end %>
+</div>
+<div id="background"></div>
